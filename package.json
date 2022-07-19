@@ -1,0 +1,24 @@
+{
+  "name": "running",
+  "version": "1.0.0",
+  "description": "running schedules & personal record",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luankefei/running.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "css-in-js"
+  ],
+  "author": "luankefei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luankefei/running/issues"
+  },
+  "homepage": "https://github.com/luankefei/running#readme"
+}
