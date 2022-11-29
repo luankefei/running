@@ -1,13 +1,59 @@
 {
+  "name": "running",
+  "version": "0.0.1",
   "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luankefei/running.git"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
     "test": "jest",
+    "format": "prettier --parser typescript --write \"src/**/*.{ts,tsx}\"",
+    "lint": "eslint --fix --ext \"src/*.d.ts\"",
     "prepare": "husky install",
     "commit": "giz-cz"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@components/(.*)": "<rootDir>/src/components/$1",
+      "@containers/(.*)": "<rootDir>/src/containers/$1",
+      "@contexts/(.*)": "<rootDir>/src/contexts/$1",
+      "@app/(.*)": "<rootDir>/src/app/$1",
+      "@services/(.*)": "<rootDir>/src/services/$1",
+      "@interface/(.*)": "<rootDir>/src/interfaces/$1",
+      "@hooks/(.*)": "<rootDir>/src/hooks/$1"
+    },
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ],
+    "preset": "ts-jest/presets/default-esm",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.ts"
+    ],
+    "transform": {
+      ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform"
+    },
+    "testMatch": [
+      "<rootDir>/**/*.spec.{js,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "globals": {
+      "ts-jest": {
+        "useESM": true,
+        "tsconfig": "tsconfig.test.json"
+      }
+    },
+    "setupFiles": [
+      "jest-canvas-mock"
+    ]
   },
   "dependencies": {
     "@arco-design/web-react": "^2.42.0",
