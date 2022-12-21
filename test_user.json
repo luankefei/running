@@ -1,0 +1,32 @@
+{
+  "error": { "error_code": 0, "error_detail": "" },
+  "data": {
+    "token_type": "Bearer",
+    "expires_at": 1671627515,
+    "expires_in": 21600,
+    "refresh_token": "2d218abc2c15a9989dbee47608eb50a59ebbae43",
+    "access_token": "02d131b090401af5249fc98f6ce3c0a3a0dd4e73",
+    "athlete": {
+      "id": 79931608,
+      "username": null,
+      "resource_state": 2,
+      "firstname": "克非",
+      "lastname": "栾",
+      "bio": null,
+      "city": "beijing",
+      "state": null,
+      "country": null,
+      "sex": "M",
+      "premium": false,
+      "summit": false,
+      "created_at": "2021-03-03T02:33:25Z",
+      "updated_at": "2022-12-20T04:53:40Z",
+      "badge_type_id": 0,
+      "weight": 56,
+      "profile_medium": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/79931608/22418909/1/medium.jpg",
+      "profile": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/79931608/22418909/1/large.jpg",
+      "friend": null,
+      "follower": null
+    }
+  }
+}
