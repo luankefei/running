@@ -1,3 +1,4 @@
+import Nav from "@components/Nav";
 import { LayoutContainer } from "./layout.style";
 
 type LayoutProps = {
@@ -5,7 +6,10 @@ type LayoutProps = {
 };
 
 const Layout = ({ children }: LayoutProps) => (
-  <LayoutContainer>{children}</LayoutContainer>
+  <LayoutContainer>
+    <Nav />
+    {children}
+  </LayoutContainer>
 );
 
 export default Layout;
