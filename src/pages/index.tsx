@@ -1,3 +1,4 @@
-import Running from "@containers/Running";
+// import Running from "@containers/Running";
+import Home from "@containers/Home";
 
-export default Running;
+export default Home;
